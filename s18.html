@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Security &amp; Bug Bounty Learn Penetration Testing 2024-3</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+            .video-container {
+                width: 100%;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+            .drive-iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card"><a href="index.html">1. Introduction To Bug Bounty</a></li>
+<li class="card"><a href="s2.html">2. Our Virtual Lab Setup</a></li>
+<li class="card"><a href="s3.html">3. Website Enumeration Information Gathering</a></li>
+<li class="card"><a href="s4.html">4. Introduction To Burpsuite</a></li>
+<li class="card"><a href="s5.html">5. HTML Injection</a></li>
+<li class="card"><a href="s6.html">6. Command InjectionExecution</a></li>
+<li class="card"><a href="s7.html">7. Broken Authentication</a></li>
+<li class="card"><a href="s8.html">8. Bruteforce Attacks</a></li>
+<li class="card"><a href="s9.html">9. Sensitive Data Exposure</a></li>
+<li class="card"><a href="s10.html">10. Broken Access Control</a></li>
+<li class="card"><a href="s11.html">11. Security Misconfiguration</a></li>
+<li class="card"><a href="s12.html">12. Cross Site Scripting XSS</a></li>
+<li class="card"><a href="s13.html">13. SQL Injection</a></li>
+<li class="card"><a href="s14.html">14. XML XPath Injection XXE</a></li>
+<li class="card"><a href="s15.html">15. Components With Known Vulnerabilities</a></li>
+<li class="card"><a href="s16.html">16. Insufficient Logging And Monitoring</a></li>
+<li class="card"><a href="s17.html">17. Monetizing Bug Hunting</a></li>
+<li class="card" id="actuel"><a href="s18.html">18. Extra Web Developer Fundamentals</a></li>
+<li class="card"><a href="s19.html">19. Extra Linux Terminal</a></li>
+<li class="card"><a href="s20.html">21. Where To Go From Here</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="left-arrow" onclick="navigate('s17.html')">←</button>
+<button class="arrow-button" id="right-arrow" onclick="navigate('s19.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section68">
+<h2 class="video-title">1. Browsing the Web</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19_8QBbGm9p12JiGk1eaysgJY5AoEe-wK/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 0)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 0)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes68" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section69">
+<h2 class="video-title">2. Breaking Google</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1BcyEQw1townKDDsM97nFqdSybHfFnfuK/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 1)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 1)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes69" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section70">
+<h2 class="video-title">3. The Internet Backbone</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19P7v50tGjkd1XC4xF_CslgN4cnf7XPga/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 2)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 2)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes70" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section71">
+<h2 class="video-title">4. Traceroute</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1ATJ-j03CNYbjC7rdBN_8kcZybC4iAqlE/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 3)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 3)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes71" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section72">
+<h2 class="video-title">5. HTML CSS Javascript</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19aQMvzOqzpCI96qt_6DJuhOcfF8Enz_x/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 4)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 4)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes72" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section73">
+<h2 class="video-title">6. Build Your First Website</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1BC5O6GNbuX9-Yd6si9DpAST-1H9flNWq/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 5)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 5)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes73" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section74">
+<h2 class="video-title">7. HTML Tags</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1B1rf38zVk2FU29CcSnvjni7Zp1i_SIid/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 6)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 6)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes74" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section75">
+<h2 class="video-title">8. Your First CSS</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1BZIWpphJKuOlwsDO_liYh4qX45lbeo50/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 7)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 7)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes75" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section76">
+<h2 class="video-title">9. What Is Javascript</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1AX1nLFtgrve_gJs-TIsQ8Fns1S6xjnP2/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 8)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 8)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes76" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section77">
+<h2 class="video-title">10. Your First Javascript</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1A2152kpfnc9cH2VkzlLhVU6vjK0RR1KH/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 9)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 9)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes77" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section78">
+<h2 class="video-title">11. Javascript On Our Webpage</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19YP6jDokWCOkVOKjtvEpIgg3IvEklV0T/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 10)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 10)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes78" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section79">
+<h2 class="video-title">12. HTTPHTTPS</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19mH417SSFdjJfOJqxaoiS_-MS24uVKKB/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 11)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 11)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes79" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section80">
+<h2 class="video-title">13. Introduction To Databases</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19emDT6r5N5XdnAAP9z8BsMZ2W2d-PIoP/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 12)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 12)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes80" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section81">
+<h2 class="video-title">14. SQL Create Table</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1AiwzXMXICE206QFojoAxkob5CkVOunIO/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 13)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 13)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes81" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section82">
+<h2 class="video-title">15. SQL Insert Into Select</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1BNdDXAYkzfVPbMWK1uZNdromVg7g7gQz/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 14)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 14)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes82" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section83">
+<h2 class="video-title">16. What is PHP</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1A4QXefVvoqHnmYPvJLUMfUwR9VENIqXu/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 15)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 15)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes83" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<a class="home-button" href="https://brahimsaa.github.io/all" id="homeButton">
+<i class="fa-solid fa-home"></i>
+</a>
+<button id="exportButton">
+<i class="fa-solid fa-download"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fa-solid fa-upload"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
